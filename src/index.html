@@ -39,11 +39,15 @@
   <meta property="og:title" content="Malavika Mohanan Official Website" />
   <meta property="og:description"
     content="Malavika Mohanan is an Indian film actress and model | Visit malavikamohanan.in for latest updates and news." "=""/>
-  <link rel=" icon" type="image/png" href="favi.png">
+  <link rel=" icon" type="image/x-icon" href="favicon.ico">
 
   <link rel="preconnect" href="https://malavikamohanan.in/">
-  <link rel="shortcut icon" type="image/png" href="favicon.png" size="16x16">
-  <link rel="apple-touch-icon" type="image/png" href="favicon.png" size="12x12">
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" size="16x16">
+  <link rel="apple-touch-icon" type="image/x-icon" href="favicon.ico" size="12x12">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
   <script defer="" type="text/javascript" src="wp-content/plugins/custom-facebook-feed/js/cff-scripts747d.js?ver=2.4.5">
   </script>
@@ -51,10 +55,19 @@
     src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&amp;version=v10.0" nonce="2c0nGrzW"></script>
   <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+
 </head>
 
 <body>
   <app-root></app-root>
+  <script>
+    $(document).ready(function(){
+      $('.counter').counterUp({
+        delay: 10,
+        time: 1200
+      });
+    });
+    </script>'
 </body>
 
 </html>
