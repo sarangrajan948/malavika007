@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+
+#logo{
+  width: 450px;
+  // height: 100px;
+}
 .section {
 //   background: url("images/bg-1.jpg") no-repeat;
   height: 100vh;
@@ -109,4 +114,9 @@
   .counter-up {
     padding: 30px 20px 0 20px;
   }
+}
+
+
+.slide img{
+  padding:50px;
 }
