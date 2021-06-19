@@ -1,13 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 
+//movies
+@media only screen and (max-width: 600px) {
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
 
-#logo{
-  width: 350px;
-  // height: 100px;
-  color:#e84e4e;
+  .slider_section {
+    margin-top: 170px;
+  }
+
 }
+
+@media only screen and (min-width: 600px) {
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 768px) {
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+@media only screen and (min-width: 1200px) {
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+  }
+
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-bottom: 20px;
+}
+
+//home
 .section {
-//   background: url("images/bg-1.jpg") no-repeat;
+  //   background: url("images/bg-1.jpg") no-repeat;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -30,7 +78,7 @@
 }
 
 .counter-up {
-//   background: url("images/bg-2.jpeg") ;
+  //   background: url("images/bg-2.jpeg") ;
   background-repeat: no-repeat;
   min-height: 50vh;
   background-size: cover;
@@ -116,8 +164,30 @@
     padding: 30px 20px 0 20px;
   }
 }
+@media only screen and (min-width: 1200px ) and (max-width: 1800px) {
+  .slide{
+    img{
+      padding: 30px;
+    }
+  }
+  .mobile{
+    display: none;
+  }
+}
+@media only screen and (min-width: 1000px ) and (max-width: 1200px) {
+  .slide{
+    img{
+      padding: 10px;
+    }
+  }
+  .mobile{
+    display: none;
+  }
+}
 
+@media only screen and (min-width: 300px) and (max-width: 800px) {
+  #content-desktop{
+    display: none ;
+  }
 
-.slide img{
-  padding:50px;
 }

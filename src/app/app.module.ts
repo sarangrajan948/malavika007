@@ -1,11 +1,10 @@
-import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule, Title } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-
 
 @NgModule({
   declarations: [
@@ -16,7 +15,7 @@ import { SlickCarouselModule } from 'ngx-slick-carousel';
     AppRoutingModule,
     SlickCarouselModule
   ],
-  providers: [],
+  providers: [ Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Title} from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -7,44 +8,57 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Malavikamohanan';
+  public constructor(private titleService: Title) { }
 
-  slides = [
-    {img: "http://placehold.it/350x150/000000"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"},
-    {img: "http://placehold.it/350x150/000000"},
-    {img: "http://placehold.it/350x150/111111"},
-    {img: "http://placehold.it/350x150/333333"},
-    {img: "http://placehold.it/350x150/666666"}
-  ];
-  slideConfig = {"slidesToShow": 3, "slidesToScroll": 1, "autoplay":true, "autoplaySpeed":2000};
-
-  
-
-  
-  addSlide() {
-    this.slides.push({img: "http://placehold.it/350x150/777777"})
+  public setTitle(newTitle: string) {
+    this.titleService.setTitle(newTitle);
   }
-  
+  slides = [
+    { img: "./assets/images/pattam.webp" },
+    { img: "./assets/images/nir.webp" },
+    { img: "./assets/images/naan11.webp" },
+    { img: "./assets/images/great.webp" },
+    { img: "./assets/images/beyond.webp" },
+    { img: "./assets/images/petta.jpg" },
+    { img: "./assets/images/master11.jpg" },
+    { img: "./assets/images/yudra.jpg" },
+    { img: "./assets/images/d43.jpg" },
+
+  ];
+  slideConfig = { "slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 2000 };
+
+  addSlide() {
+    this.slides.push({ img: "./assets/images/pattam.webp" },
+      { img: "./assets/images/nir.webp" },
+      { img: "./assets/images/naan11.webp" },
+      { img: "./assets/images/great.webp" },
+      { img: "./assets/images/beyond.webp" },
+      { img: "./assets/images/petta.jpg" },
+      { img: "./assets/images/master11.jpg" },
+      { img: "./assets/images/yudra.jpg" },
+      { img: "./assets/images/d43.jpg" },
+
+    )
+  }
+
   removeSlide() {
     this.slides.length = this.slides.length - 1;
   }
-  
+
   slickInit(e) {
     console.log('slick initialized');
   }
-  
+
   breakpoint(e) {
     console.log('breakpoint');
   }
-  
+
   afterChange(e) {
     console.log('afterChange');
   }
-  
+
   beforeChange(e) {
     console.log('beforeChange');
-  }     
- 
+  }
+
 }

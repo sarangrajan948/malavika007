@@ -32,25 +32,25 @@
             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
               <ul id="nav" class="navbar-nav ml-auto">
                 <li class="nav-item">
-                  <a class="page-scroll active" href="#home">Home</a>
+                  <a class="page-scroll active" (click)="setTitle('Malavika Mohanan Website')" href="#home">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#about">About</a>
+                  <a class="page-scroll" (click)="setTitle('About Malavika')" href="#about">About</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#services">Services</a>
+                  <a class="page-scroll" (click)="setTitle('Malavika Movies')" href="#movies">Movies</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#portfolio">Gallery</a>
+                  <a class="page-scroll" (click)="setTitle('Malavika Gallery')" href="#portfolio">Gallery</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#team">Team</a>
+                  <a class="page-scroll" (click)="setTitle('Malavika Team')" href="#team">Team</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#updates">Updates</a>
+                  <a class="page-scroll" (click)="setTitle('Malavika Updates')" href="#updates">Updates</a>
                 </li>
                 <li class="nav-item">
-                  <a class="page-scroll" href="#contact">Contact</a>
+                  <a class="page-scroll" (click)="setTitle('Contact Malavika')" href="#contact">Contact</a>
                 </li>
               </ul>
             </div>
@@ -151,87 +151,86 @@
 </section>
 
 
-<section id="services" class="features_area pt-120">
+<section id="movies"  class="features_area pt-120">
   <div class="container">
     <div class="row justify-content-center">
       <div class="col-lg-6">
         <div class="section_title text-center pb-25">
-          <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Our Services</h4>
+          <h4 class="title wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">Malavika Movies</h4>
           <p class="wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">Lorem ipsum dolor sit
             amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore.</p>
         </div>
       </div>
     </div>
 
+    <div id="#content-mobile" class="mobile" style="background-color:white;">
+      <div class="row m-2">
+        <div class="col-lg-12 text-center mt-5">
+          <div class="row">
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/pattam.webp" alt="pattam pole" style="width:100%;height: auto;">
+              </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/nir.webp" alt="nirnayakam" style="width:100%;height: auto;">
+              </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/naan11.webp" alt="nmv" style="width:100%;height: auto;">
+              </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/great.webp" alt="the great father" style="width:100%;height: auto;">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/beyond1.webp" alt="beyond the clouds" style="width:100%;height: auto;">
+              </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/petta11.webp" alt="petta" style="width:100%;height: auto;">
+              </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/master11.webp" alt="master" style="width:100%;height: auto;">
+              </div>
+            </div>
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/d43.jpg" alt="d43" style="width:100%;">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-3 mb-2">
+              <div class="card">
+                <img src="/assets/images/yudra.jpg" alt="yudra" style="width:100%;height: auto;">
+              </div>
+            </div>
 
-    <div class="container">
-      <ngx-slick-carousel class="carousel" 
-      #slickModal="slick-carousel" 
-      [config]="slideConfig">
-<div ngxSlickItem *ngFor="let slide of slides" class="slide">
-<img src="{{ slide.img }}" alt="" width="100%">
-</div>
-</ngx-slick-carousel>
-
-<!-- <button (click)="addSlide()">Add</button>
-<button (click)="removeSlide()">Remove</button>
-<button (click)="slickModal.slickGoTo(2)">slickGoto 2</button>
-<button (click)="slickModal.unslick()">unslick</button> -->
-      </div>
-
-
-
-    <!-- <div class="row">
-      <div class="col-lg-4 col-md-6">
-        <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-          <i class="lni lni-briefcase"></i>
-          <h4 class="features_title">Digital Business</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
+          </div>
         </div>
       </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
-          <i class="lni lni-clipboard"></i>
-          <h4 class="features_title">Startup Business</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
-          <i class="lni lni-target-revenue"></i>
-          <h4 class="features_title">Business Investment</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.2s">
-          <i class="lni lni-invention"></i>
-          <h4 class="features_title">Business Solutions</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.3s">
-          <i class="lni lni-bar-chart"></i>
-          <h4 class="features_title">Business Analysis</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
-        </div>
-      </div>
-      <div class="col-lg-4 col-md-6">
-        <div class="single_features text-center mt-60 wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.4s">
-          <i class="lni lni-calendar"></i>
-          <h4 class="features_title">Consulting Business</h4>
-          <p>Lorem ipsum dolor sit amet, sadipscing elitr, sed diam nonumy eirmod tempor invidunt labor dolore magna .
-          </p>
-        </div>
-      </div>
-    </div> -->
+    </div>
   </div>
+  <div class="container desktop" id="#content-desktop">
+    <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideConfig">
+      <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+        <img src="{{ slide.img }}" alt="Slider" width="100%" height="496px" class="sld">
+      </div>
+    </ngx-slick-carousel>
+  </div>
+
+
 </section>
 
 
