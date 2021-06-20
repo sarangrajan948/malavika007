@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import {Title} from '@angular/platform-browser';
+// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { HappyBirthdayComponent } from './happy-birthday/happy-birthday.component';
 
 @Component({
   selector: 'app-root',
@@ -26,7 +28,7 @@ export class AppComponent {
 
   ];
   slideConfig = { "slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 2000 };
-
+  
   addSlide() {
     this.slides.push({ img: "./assets/images/pattam.webp" },
       { img: "./assets/images/nir.webp" },
@@ -60,5 +62,16 @@ export class AppComponent {
   beforeChange(e) {
     console.log('beforeChange');
   }
-
-}
+  // Wishmaals() {
+  //   const activeModal = this.modalService.open(HappyBirthdayComponent, {
+  //     backdrop: "static",
+  //     centered: true,
+  //     windowClass: 'modal-info'
+  //   });
+    // activeModal.result.then(
+    //   (data) => {
+    //     this.getSubject(this.user.id);
+    //   },
+    //   (reason) => {}
+    // );
+  }

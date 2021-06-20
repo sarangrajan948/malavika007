@@ -5,17 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 import { SlickCarouselModule } from 'ngx-slick-carousel';
+import { HappyBirthdayComponent } from './happy-birthday/happy-birthday.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HappyBirthdayComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     SlickCarouselModule
   ],
-  providers: [ Title],
+  providers: [Title],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
