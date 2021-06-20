@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {Title} from '@angular/platform-browser';
-// import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import {MatDialog,MatDialogConfig, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { HappyBirthdayComponent } from './happy-birthday/happy-birthday.component';
 
 @Component({
@@ -10,11 +10,12 @@ import { HappyBirthdayComponent } from './happy-birthday/happy-birthday.componen
 })
 export class AppComponent {
   title = 'Malavikamohanan';
-  public constructor(private titleService: Title) { }
+  constructor(private titleService: Title) { }
 
   public setTitle(newTitle: string) {
     this.titleService.setTitle(newTitle);
   }
+
   slides = [
     { img: "./assets/images/pattam.webp" },
     { img: "./assets/images/nir.webp" },
