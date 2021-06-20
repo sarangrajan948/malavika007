@@ -25,8 +25,22 @@ export class AppComponent {
     { img: "./assets/images/master11.jpg" },
     { img: "./assets/images/yudra.jpg" },
     { img: "./assets/images/d43.jpg" },
-
   ];
+
+  portfolio = [
+    { img:"./assets/images/malavika.jpeg"},
+    { img:"./assets/images/malavika1.jpeg"},
+    { img:"./assets/images/malavika3.jpeg"},
+    { img:"./assets/images/malavika4.jpeg"},
+    { img:"./assets/images/3.webp"},
+    { img:"./assets/images/14.webp"},
+    { img:"./assets/images/5.webp"},
+    { img:"./assets/images/3.webp"},
+    { img:"./assets/images/3.webp"},
+    { img:"./assets/images/5.webp"},
+    { img:"./assets/images/14.webp"},
+    { img:"./assets/images/5.webp"},
+  ]
   slideConfig = { "slidesToShow": 3, "slidesToScroll": 1, "autoplay": true, "autoplaySpeed": 2000 };
   
   addSlide() {

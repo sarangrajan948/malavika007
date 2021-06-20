@@ -232,10 +232,10 @@
     </div>
   </div>
   <div class="portfolio_wrapper d-flex flex-wrap">
-    <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
-      <img src="assets/images/malavika4.jpeg" alt="portfolio">
+    <div *ngFor="let photos of portfolio" class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+      <img src="{{photos.img}}" alt="portfolio">
     </div>
-    <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
+    <!-- <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
       <img src="assets/images/malavika3.jpeg" alt="portfolio">
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
@@ -267,7 +267,7 @@
     </div>
     <div class="single_portfolio wow fadeInUp" data-wow-duration="1.3s" data-wow-delay="0.5s">
       <img src="assets/images/5.webp" alt="portfolio">
-    </div>
+    </div> -->
   </div>
 </section>
 
