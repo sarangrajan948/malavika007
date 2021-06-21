@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import {Title} from '@angular/platform-browser';
-import {MatDialog,MatDialogConfig, MatDialogRef, MAT_DIALOG_DATA} from '@angular/material/dialog';
 import { HappyBirthdayComponent } from './happy-birthday/happy-birthday.component';
 
 @Component({
